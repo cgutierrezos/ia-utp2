@@ -140,7 +140,10 @@ class userController extends Controller
 
         $user = User::where('email', $request->email)->first();
         if ($user->confirmed) {
-            passwordReset::firstOrCreate(['email' => $user->email, 'token' => $user->confirmation_code]);
+            $password = new passwordReset();
+            $password->email = $user->email;
+            $password->token = $user->confirmation_code;
+            $password->save();
 
             Mail::send('auth.emails.password', ['user' => $user], function($message) use($request)
                 {
