@@ -1,0 +1,11 @@
+<div class="container-fluid">
+		<button  class="btn btn-warning btn-lg btn-block"  onclick='javascript:location.reload()'>
+			<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Gerenar nuevo arbol
+		</button>
+		<button id="banimar" class="btn btn-success btn-lg btn-block"  onclick='inicio_animacion()'>
+			<span id="play_animar" class="glyphicon glyphicon-play" aria-hidden="true"></span> Iniciar Animacion (Aut)
+		</button>
+		<button id="siguiente" class="btn btn-success btn-lg btn-block" onclick='animar()'">
+			<span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span> Siguiente Paso (Man)
+		</button>
+	</div>
