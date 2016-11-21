@@ -15,6 +15,7 @@ use Auth;
 
 
 
+
 class grafoController extends Controller
 {
     /**
@@ -47,7 +48,7 @@ class grafoController extends Controller
     public function store(Request $request)
     {
 
-        if (Auth::check() && User::find(Auth::user()->id)->confirmed ==1) {
+        if (Auth::check() && Auth::user()->confirmed == 1) {
             
         
             $v = Validator::make($request->all(), [
