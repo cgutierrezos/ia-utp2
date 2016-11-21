@@ -151,10 +151,5 @@ class userController extends Controller
         }else{
             return redirect()->back()->withInput([Input::get('email')])->withErrors(array('email' => 'Esta cuenta aun no se ha confirmado'));
         }
-
-        
-        
-
-        
     }
 }
