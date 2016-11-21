@@ -182,7 +182,7 @@ class AuthController extends Controller
         if (count($the_user) > 0){
         $active = 1;
         $confirmation_code = str_random(100);
-        $user->where('email', '=', $email)->update(['confirmed' => $active, 'confirmation_code' => $confirm_token]);
+        $user->where('email', '=', $email)->update(['confirmed' => $active, 'confirmation_code' => $confirmation_code]);
         session()->put('title', 'Bienvenido ' . $the_user[0]['username']);
         session()->put('message', 'Enhorabuena ' . ' ya puede iniciar sesión');
         return redirect('/');
