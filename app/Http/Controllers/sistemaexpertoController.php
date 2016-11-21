@@ -16,6 +16,7 @@ use App\sistemaexperto;
 
 use Validator;
 use Auth;
+use App\User;
 
 
 class sistemaexpertoController extends Controller
@@ -61,7 +62,7 @@ class sistemaexpertoController extends Controller
         }
 
         $usuario = 1;
-        if (Auth::check() && User::find(Auth::user()->id)->confirmed == 1) {
+        if (Auth::check() && Auth::user()->confirmed == 1) {
             $usuario = Auth::user()->id;
         }
 
