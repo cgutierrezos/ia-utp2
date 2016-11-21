@@ -12,7 +12,7 @@
                 <h3>Registro De Usuarios</h3>
                 <form method="post" action="/auth/register">
                     <div class="row uniform 50%">
-                        <div class="6u 12u$(xsmall)">
+                        <div class="12u$">
                             <input type="text" name="username" id="username" value="" placeholder="Nombre Usuario">
                             @if ($errors->has('username'))
                                 <span class="help-block">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="row uniform 50%">
-                        <div class="6u$ 12u$(xsmall)">
+                        <div class="12u$">
                             <input type="text" name="email" id="email" value="" placeholder="E-Mail">
                             @if ($errors->has('email'))
                                 <span class="help-block">
