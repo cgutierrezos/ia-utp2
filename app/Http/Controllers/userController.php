@@ -118,7 +118,7 @@ class userController extends Controller
             echo "token";
             var_dump($token);
             var_dump($user->username);
-            var_dump($user->token);
+            var_dump($user->confirmation_code);
 
             //return view('auth.passwords.reset', ['token' => $token]);
         }else{
