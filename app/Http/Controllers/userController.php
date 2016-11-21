@@ -120,7 +120,7 @@ class userController extends Controller
             var_dump($user->username);
             var_dump($user->confirmation_code);
 
-            //return view('auth.passwords.reset', ['token' => $token]);
+            return view('auth.passwords.reset', ['token' => $token]);
         }else{
             session()->put('title', 'Error');
             session()->put('message', 'El token de confirmacion es invalido');
