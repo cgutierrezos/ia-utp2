@@ -14,6 +14,7 @@ class passwordReset extends Model
      */
     protected $table = 'password_resets';
 
+    protected $primaryKey = 'email';
 
     protected $fillable = [
         'email', 'token',
