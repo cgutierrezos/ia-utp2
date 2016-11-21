@@ -115,11 +115,6 @@ class userController extends Controller
     public function resetPassword($token){
         $user = User::where('confirmation_code', $token)->get()->first();
         if ($user) {
-            echo "token";
-            var_dump($token);
-            var_dump($user->username);
-            var_dump($user->confirmation_code);
-
             return view('auth.passwords.reset', ['token' => $token]);
         }else{
             session()->put('title', 'Error');

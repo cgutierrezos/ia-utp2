@@ -123,8 +123,8 @@ class AuthController extends Controller
             $user->confirmation_code = str_random(100);
             $user->save();
 
-            var_dump("reset exitoso");
-            //$this->auth->login($user);
+            //var_dump("reset exitoso");
+            $this->auth->login($user);
         });
  
         switch ($response)
