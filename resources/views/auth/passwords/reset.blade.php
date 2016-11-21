@@ -18,6 +18,7 @@
                                 </span>
                             @endif
                         </div>
+                    <div class="row uniform 50%">
                         <div class="12u$">
                             <input type="password" name="password" id="password" value="" placeholder="Clave">
                             @if ($errors->has('password'))
@@ -26,6 +27,8 @@
                                 </span>
                             @endif
                         </div>
+                    </div>
+                    <div class="row uniform 50%">
                         <div class="12u$">
                             <input type="password" name="password_confirmation" id="password_confirmation" value="" placeholder="Confirme la Clave">
                             @if ($errors->has('password_confirmation'))

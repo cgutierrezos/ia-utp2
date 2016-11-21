@@ -45,6 +45,8 @@
 		                        </span>
 		                    @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="6u$ 12u$(xsmall)">
 							<input type="text" name="fin_ruta" id="fin_ruta" value="" placeholder="Nodo Fin">
 							@if ($errors->has('fin_ruta'))
@@ -53,6 +55,8 @@
 		                        </span>
 		                    @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u$">
 							<ul class="actions">
 								<li><input type="submit" value="Animar Grafo" class="special"></li>

@@ -58,6 +58,8 @@
 	                                </span>
 	                            @endif
 							</div>
+						</div>
+						<div class="row uniform 50%">
 							<div class="12u$">
 								<textarea name="comments" id="comments" placeholder="Comentarios del Sistema Experto" rows="3"></textarea>
 								@if ($errors->has('comments'))
@@ -66,7 +68,8 @@
 	                                </span>
 	                            @endif
 							</div>
-							
+						</div>
+						<div class="row uniform 50%">
 							<div class="12u$">
 								<label>Subir La Base Del Conocimiento (.txt)</label>
 								<input type="file" name="sistema" id="sistema" accept=".txt">
@@ -76,6 +79,8 @@
 	                                </span>
 	                            @endif
 							</div>
+						</div>
+						<div class="row uniform 50%">
 							<div class="12u$">
 								<ul class="actions">
 									<li><input type="submit" value="Guardar" class="special"></li>

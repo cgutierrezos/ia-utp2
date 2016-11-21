@@ -50,6 +50,8 @@
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="6u$ 12u$(xsmall)">
 							<input type="text" name="fin" id="fin" value="" placeholder="Fin">
 							@if ($errors->has('fin'))
@@ -58,6 +60,8 @@
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u$">
 							<input type="text" name="valor" id="valor" value="" placeholder="Valor">
 							@if ($errors->has('valor'))
@@ -66,6 +70,8 @@
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u$">
 							<ul class="actions">
 								<li><input type="submit" value="Guardar" class="special"></li>

@@ -56,6 +56,8 @@
 	                                </span>
 	                            @endif
 							</div>
+						</div>
+						<div class="row uniform 50%">
 							<div class="12u$">
 								<textarea name="comments" id="comments" placeholder="Comentarios del Grafo" rows="3"></textarea>
 								@if ($errors->has('comments'))
@@ -64,6 +66,8 @@
 	                                </span>
 	                            @endif
 							</div>
+						</div>
+						<div class="row uniform 50%">
 							<div class="12u$">
 								<ul class="actions">
 									<li><input type="submit" value="Guardar" class="special"></li>

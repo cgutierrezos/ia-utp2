@@ -19,6 +19,8 @@
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="6u 12u$(xsmall)">
 							<input type="text" name="comments" id="comments" value="" placeholder="Comentarios del Sistema Experto">
 							@if ($errors->has('comments'))
@@ -27,6 +29,8 @@
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u">
 							<input type="file" name="sistema" id="sistema" accept=".txt">
 							@if ($errors->has('text'))
@@ -35,6 +39,8 @@
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u$">
 							<ul class="actions">
 								<li><input type="submit" value="Guardar" class="special"></li>

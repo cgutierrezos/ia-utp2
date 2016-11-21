@@ -18,6 +18,8 @@
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u$">
 							<textarea name="atributos" id="atributos" placeholder="Atributos del objeto separados por un salto de linea ejemplo: 
 atributo1
@@ -31,6 +33,8 @@ atributoN" rows="6"></textarea>
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u">
 							<label>Subir La Base Del Conocimiento (.txt), Si Selecciona Un Archivo Se Omiten Los Campos Anteriores</label>
 							<input type="file" name="sistema" id="sistema" accept=".txt">
@@ -40,6 +44,8 @@ atributoN" rows="6"></textarea>
                                 </span>
                             @endif
 						</div>
+					</div>
+					<div class="row uniform 50%">
 						<div class="12u$">
 							<ul class="actions">
 								<li><input type="submit" value="Guardar" class="special"></li>
