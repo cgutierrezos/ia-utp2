@@ -386,7 +386,7 @@ class sistemaexpertoController extends Controller
      */
     public function edit($id)
     {
-        if(Auth::check() && User::find(Auth::user()->id)->confirmed == 1 &&  sistemaexperto::find($id)->user_id == Auth::user()->id){
+        if(Auth::check() && Auth::user()->confirmed == 1 &&  sistemaexperto::find($id)->user_id == Auth::user()->id){
             $sistema = sistemaexperto::find($id);
             return view('home.sistemaexperto.sistema_experto', ['sistema' => $sistema]);
         }else{
@@ -403,7 +403,7 @@ class sistemaexpertoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if(Auth::check() && User::find(Auth::user()->id)->confirmed == 1 && sistemaexperto::find($id)->user_id == Auth::user()->id){
+        if(Auth::check() && Auth::user()->confirmed == 1 && sistemaexperto::find($id)->user_id == Auth::user()->id){
             if (Input::file('sistema') && Input::file('sistema')->isValid())
             {
                 
@@ -538,7 +538,7 @@ class sistemaexpertoController extends Controller
      */
     public function destroy($id)
     {
-        if(Auth::check() && User::find(Auth::user()->id)->confirmed  == 1 && sistemaexperto::find($id)->user_id == Auth::user()->id){
+        if(Auth::check() && Auth::user()->confirmed == 1 && sistemaexperto::find($id)->user_id == Auth::user()->id){
             $destroy=sistemaexperto::destroy($id);
             return redirect()->back();
         }else{

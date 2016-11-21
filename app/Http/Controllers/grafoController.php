@@ -145,7 +145,7 @@ class grafoController extends Controller
      */
     public function edit($id)
     {
-        if(Auth::check() && User::find(Auth::user()->id)->confirmed ==1 && grafo::find($id)->user_id == Auth::user()->id){
+        if(Auth::check() && Auth::user()->confirmed == 1 && grafo::find($id)->user_id == Auth::user()->id){
             $edges = edge::where('grafo_id', $id)->get()->all();
             return view('home.grafos.grafo_edit', ['grafo' => $id, 'edges' => $edges]);
         }else{
@@ -163,7 +163,7 @@ class grafoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if(Auth::check() && User::find(Auth::user()->id)->confirmed ==1 && grafo::find($id)->user_id == Auth::user()->id){
+        if(Auth::check() && Auth::user()->confirmed == 1 && grafo::find($id)->user_id == Auth::user()->id){
             $v = Validator::make($request->all(), [
                 'inicio' => 'required|alpha_num',
                 'fin' => 'required|alpha_num|different:inicio',
@@ -222,7 +222,7 @@ class grafoController extends Controller
      */
     public function destroy($id)
     {
-        if(Auth::check() && User::find(Auth::user()->id)->confirmed ==1 && grafo::find($id)->user_id == Auth::user()->id){
+        if(Auth::check() && Auth::user()->confirmed == 1 && grafo::find($id)->user_id == Auth::user()->id){
             $grafo =grafo::destroy($id);
             return redirect('animaciones/grafo/create');
         }else{
