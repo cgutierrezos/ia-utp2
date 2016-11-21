@@ -113,8 +113,13 @@ class userController extends Controller
     }
 
     public function resetPassword($token){
-        if (User::where('confirmation_code', $token)->get()->first()) {
-            return view('auth.passwords.reset', ['token' => $token]);
+        $user = User::where('confirmation_code', $token)->get()->first();
+        if ($user) {
+            echo "token";
+            var_dump($token);
+            var_dump($user->token);
+
+            //return view('auth.passwords.reset', ['token' => $token]);
         }else{
             session()->put('title', 'Error');
             session()->put('message', 'El token de confirmacion es invalido');
