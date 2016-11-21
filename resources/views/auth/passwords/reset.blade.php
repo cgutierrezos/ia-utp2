@@ -6,7 +6,7 @@
     <div id='main' class='wrapper style1'>
         <div class='container'>                     
             <section>
-                <h3>Cambia Tu Contraseña</h3>
+                <h3>Cambia Tu Contraseña {{{$token}}}</h3>
                 <form method="post" action="/password/reset">
                     <input type="hidden" id='token' name="token" value="{{ $token }}">
                     <div class="row uniform 50%">
