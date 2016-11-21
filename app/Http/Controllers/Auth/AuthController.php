@@ -120,8 +120,9 @@ class AuthController extends Controller
         $response = $this->passwords->reset($credentials, function($user, $password)
         {
             $user->password = crypt($password);
- 
+            $user->confirmation_code = str_random(100);
             $user->save();
+
  
             $this->auth->login($user);
         });
