@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="{{ asset('plugins/landed/css/main.css') }}" />
         
     </head>
-    <body id='body'>
+    <body>
         <div id="page-wrapper">
 
             @include('templates.nav2')

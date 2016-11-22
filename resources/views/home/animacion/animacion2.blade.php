@@ -55,7 +55,7 @@
 		var ruta=null
 		var grafo, grafo_animacion, Busqueda, node, container, tipo_busqueda=null
 
-		document.getElementById("body").onresize =resize_canvas() 
+		
 
 		function inicio_animacion(){
 			if(iniciar_animacion){
@@ -74,16 +74,6 @@
 		}
 		
 
-		function resize_canvas(){
-            var canvas = document.getElementById("mynetwork");
-            if (canvas.width  < window.innerWidth){
-                canvas.width  = window.innerWidth-80
-            }
-
-            if (canvas.height < window.innerHeight){
-                canvas.height = window.innerHeight-210
-            }
-        }
 
 		
 		
