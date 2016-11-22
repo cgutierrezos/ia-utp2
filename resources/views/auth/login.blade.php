@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'login')
+
 @section('body')
                          
         <section>
@@ -14,6 +16,8 @@
                             </span>
                         @endif
                     </div>
+                </div>
+                <div class="row uniform 50%">
                     <div class="12u$">
                         <input type="password" name="password" id="password" value="" placeholder="Password">
                         @if ($errors->has('password'))
@@ -22,9 +26,13 @@
                             </span>
                         @endif
                     </div>
+                </div>
+                <div class="row uniform 50%">
                     <div class="12u$">
                         <a href="/password/forgot">Olvido su clave?</a>
                     </div>
+                </div>
+                <div class="row uniform 50%">
                     <div class="12u$">
                         <ul class="actions">
                             <li><input type="submit" value="Guardar" class="special"></li>
