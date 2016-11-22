@@ -1,5 +1,4 @@
-@extends('templates.template2')
-
+@extends('layouts.app')
 
 @section('title', 'Algoritmos')
 
