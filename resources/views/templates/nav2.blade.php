@@ -6,7 +6,9 @@
 			
 
 			
-			<li><a href="/algoritmos">ALGORITMOS</a></li>
+			<li>
+				<a href="/algoritmos">ALGORITMOS</a>
+			</li>
 			<li>
 				<a href="">ANIMACIONES</a>
 				<ul>
