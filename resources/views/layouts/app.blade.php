@@ -26,14 +26,13 @@
             </div>
         </div>
         
-        <!-- Scripts -->
+        
         <script src="{{ asset('plugins/landed/js/jquery.min.js') }}"></script>
         <script src="{{ asset('plugins/landed/js/jquery.scrolly.min.js') }}"></script>
         <script src="{{ asset('plugins/landed/js/jquery.dropotron.min.js') }}"></script>
         <script src="{{ asset('plugins/landed/js/jquery.scrollex.min.js') }}"></script>
         <script src="{{ asset('plugins/landed/js/skel.min.js') }}"></script>
         <script src="{{ asset('plugins/landed/js/util.js') }}"></script>
-        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js'"></script><![endif]-->
         <script src="{{ asset('plugins/landed/js/main.js') }}"></script>
 
     </body>
