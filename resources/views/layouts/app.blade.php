@@ -13,11 +13,16 @@
         
     </head>
     <body id='body' class="landing">
-        <div id='main' class='wrapper style1'>
-            <div class='container'>
-                @include('templates.nav2')
+        <div id="page-wrapper">
 
-                @yield('body')
+            @include('templates.nav2')
+            
+            <div id='main' class='wrapper style1'>
+                <div class='container'>
+                    
+
+                    @yield('body')
+                </div>
             </div>
         </div>
         
