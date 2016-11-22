@@ -9,17 +9,17 @@
         <title>@yield('title')</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="{{ asset('plugins/landed/css/main.css') }}" />
-        <!--link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}" -->
-        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
     </head>
     <body id='body' class="landing">
+        <div id='main' class='wrapper style1'>
+            <div class='container'>
+                @include('templates.nav2')
 
-        @include('templates.nav2')
-
-        @yield('body')
+                @yield('body')
+            </div>
+        </div>
         
         <!-- Scripts -->
         <script src="{{ asset('plugins/landed/js/jquery.min.js') }}"></script>

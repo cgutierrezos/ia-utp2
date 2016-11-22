@@ -4,9 +4,7 @@
 
 @section('body')
 
-	<div id="page-wrapper">
-
-		<!-- Header -->
+	
 		@include('templates.nav2')
 
 		<!-- Banner -->
@@ -29,5 +27,4 @@
 		<!-- Footer -->
 		@include('templates.footer')
 
-	</div>
 @endsection

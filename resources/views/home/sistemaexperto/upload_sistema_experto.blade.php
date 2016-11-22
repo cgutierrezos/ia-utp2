@@ -4,9 +4,6 @@
 
 @section('body')
 
-	<div id='main' class='wrapper style1'>
-		<div class='container'>			
-						
 			<section>
 				<h3>Seleccione el archivo del sistema experto</h3>
 				<form method="post" action="/sistema-experto/store-upload" accept-charset="UTF-8" enctype="multipart/form-data">
@@ -49,8 +46,5 @@
 					</div>
 				</form>
 			</section>
-		</div>
-	</div>
-	
 
 @endsection
