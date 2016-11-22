@@ -9,7 +9,7 @@
 			@if(session()->get('respuesta') == '')
 				<h2>PREGUNTA</h2>
 				@foreach(session()->get('pregunta') as $key => $pregunta)
-					<p>Usted posee: {{{App\atributo::find($pregunta)->name}}}?</p>
+					<p>Posee/tiene/es ó: {{{App\atributo::find($pregunta)->name}}}?</p>
 
 				@endforeach
 				{{--<table>
